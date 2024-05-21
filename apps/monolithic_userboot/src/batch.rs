@@ -9,7 +9,11 @@ const BUSYBOX_TESTCASES: &[&str] = &[
 ];
 
 #[allow(dead_code)]
-const LIBC_TESTCASES: &[&str] = &["libctest_testcode.sh", "libc-bench"];
+const LIBC_TESTCASES: &[&str] = &[
+    "futex_test 10 100 100",
+    // "libctest_testcode.sh", 
+    // "libc-bench"
+];
 
 #[allow(dead_code)]
 const NET_TESTCASES: &[&str] = &[
